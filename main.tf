@@ -32,7 +32,7 @@ resource "aws_s3_bucket_public_access_block" "example" {
   restrict_public_buckets = false
 }
 
-resource "aws_s3_bucket_policy" "mywe" {
+resource "aws_s3_bucket_policy" "mywebapp" {
   bucket = aws_s3_bucket.demo1.bucket
   policy = jsonencode(
     {
